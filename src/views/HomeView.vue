@@ -1,3 +1,7 @@
+<script setup>
+import BooksTable from '@/components/BooksTable.vue'
+</script>
+
 <template>
-  <main>Nothing here yet...</main>
+  <BooksTable />
 </template>
