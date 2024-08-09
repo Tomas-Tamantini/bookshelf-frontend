@@ -14,7 +14,7 @@ interface BooksResponse {
 
 const endpointUrl = `${API_URL}/books`
 
-export const getBooks = async (): Promise<BooksResponse> => {
-  const response = await fetch(endpointUrl)
+export const getBooks = async (partialTitle: string): Promise<BooksResponse> => {
+  const response = await fetch(`${endpointUrl}?title=${partialTitle}`)
   return response.json()
 }
