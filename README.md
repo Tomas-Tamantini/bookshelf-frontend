@@ -1,18 +1,10 @@
 # bookshelf-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+An app where people manage their favorite books, vuild with Vue. It's built as the final project for the awesome [FastAPI do Zero](https://fastapidozero.dunossauro.com/) course.
 
-## Recommended IDE Setup
+Checkout the detailed project requirements [here](https://fastapidozero.dunossauro.com/14/#o-projeto).
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+See the source code for the [backend](https://github.com/Tomas-Tamantini/bookshelf).
 
 ## Project Setup
 
