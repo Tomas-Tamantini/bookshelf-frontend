@@ -27,10 +27,13 @@ onMounted(fetchBook)
 </script>
 
 <template>
-  <div>
+  <div v-if="book.title">
     <h1>{{ book.title }}</h1>
     <p>Author: {{ book.authorName }}</p>
     <p>Year: {{ book.year }}</p>
+  </div>
+  <div v-else>
+    <p>Book not found</p>
   </div>
 </template>
 
