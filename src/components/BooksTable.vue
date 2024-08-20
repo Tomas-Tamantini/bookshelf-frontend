@@ -55,6 +55,7 @@ onMounted(fetchBooks)
           <th>Title</th>
           <th>Author</th>
           <th>Year</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -62,6 +63,9 @@ onMounted(fetchBooks)
           <td>{{ book.title }}</td>
           <td>{{ book.authorName }}</td>
           <td>{{ book.year }}</td>
+          <td>
+            <router-link :to="'/books/' + book.id">Details</router-link>
+          </td>
         </tr>
       </tbody>
     </table>
