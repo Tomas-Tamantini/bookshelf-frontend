@@ -18,3 +18,8 @@ export const getBooks = async (partialTitle: string): Promise<BooksResponse> => 
   const response = await fetch(`${endpointUrl}?title=${partialTitle}`)
   return response.json()
 }
+
+export const getBookById = async (id: number): Promise<Book> => {
+  const response = await fetch(`${endpointUrl}/${id}`)
+  return response.json()
+}
