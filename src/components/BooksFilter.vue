@@ -9,9 +9,25 @@ const filterTitle = (event) => {
 
 <template>
   <form>
-    <label for="filter-title"> Title </label>
     <div id="filter-title">
       <input type="text" @input="filterTitle" placeholder="Title" />
     </div>
   </form>
 </template>
+
+<style scoped>
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 5px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+</style>
