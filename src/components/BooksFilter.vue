@@ -4,7 +4,6 @@ const emit = defineEmits(['filterTitle'])
 const filterTitle = (event) => {
   emit('filterTitle', event.target.value)
 }
-// TODO: Add style
 </script>
 
 <template>
