@@ -64,7 +64,9 @@ onMounted(fetchBooks)
           <td>{{ book.authorName }}</td>
           <td>{{ book.year }}</td>
           <td>
-            <router-link :to="'/books/' + book.id">Details</router-link>
+            <router-link :to="'/books/' + book.id">
+              <img src="https://icongr.am/feather/eye.svg?size=20&color=ffffff" alt="Details" />
+            </router-link>
           </td>
         </tr>
       </tbody>
@@ -72,3 +74,35 @@ onMounted(fetchBooks)
     <p>Total results: {{ totalBooks }}</p>
   </div>
 </template>
+
+<style scoped>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #444;
+}
+
+tr:hover {
+  background-color: #555;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+</style>
